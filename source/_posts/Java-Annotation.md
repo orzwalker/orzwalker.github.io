@@ -8,7 +8,7 @@ categories:
 - Java基础
 ---
 
-![71261209_p0](Java-Annotation.assets/71261209_p0.jpg)
+![hexo image]()
 
 # 注解
 
