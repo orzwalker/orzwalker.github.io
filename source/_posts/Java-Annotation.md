@@ -8,8 +8,6 @@ categories:
 - Java基础
 ---
 
-![hexo image](Java-Annotation/71261209_p0.jpg)
-
 # 注解
 
 > 注解可以简单理解为`标签`：是对事物行为的某些角度的评价与解释
