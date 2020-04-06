@@ -11,7 +11,7 @@ Categories:
 
 # 内存布局
 
-![image-20200406145826333](/Users/walker/Library/Application Support/typora-user-images/image-20200406145826333.png)
+![image-20200406145826333](JVM/image-20200406145826333.png)
 
 ## Heap（堆区）
 
