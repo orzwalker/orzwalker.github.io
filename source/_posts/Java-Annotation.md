@@ -63,7 +63,7 @@ Java定义了4个标准的meta-annotation类型，被用来提供对其他annota
 + SuppressWarnings：忽略警告
 + FunctionalInterface：函数式接口注解，使用了该注解的接口，只包含一个方法，如Runable接口，该类方法都能转为Lambda表达式
 
-# Spring中常用到的注解
+# 常用注解
 
 ## Spring
 
@@ -97,21 +97,30 @@ public @interface Controller {
 - @Autowired按照类型进行装配；
 - @Resource有两个关键属性，name和type，如果没有指定name和type，则容器使用属性的名称作为默认name在容器中查找依赖，若没找到，则会根据type进行查找；如果指定了name，则只会根据name在容器中装配，推荐使用@Resource
 
+### 配置类
 
++ @Configuration：等同于spring的XML配置文件
+
+### 序列化
+
+* JsonProperty(value="xxx", required=true/false)
+  * Value：该属性序列化与反序列化时用到的key值
+  * required：默认false，如果为true，当序列化、反序列化时没有找到该key时会报错
+* JsonAlias()：反序列化时使用，指定该Java属性可以接收更多名称
 
 ## Spring MVC
 
 - @Controller：表明该类会作为与前端作交互的控制层组件，通过服务接口定义的提供访问应用程序的一种行为，解释用户的输入，将其转换成一个模型然后将试图呈献给用户；
 
-- @RequestMapping：用于将url映射到整个处理类或者特定的处理请求的方法；
+- @RequestMapping：返回值为跳转路径，用于将url映射到整个处理类或者特定的处理请求的方法；
 
-- @RequestParam：默认情况下，required=true，也就是改参数必须要传。如果改参数可以传可不传，可以配置required=false；
+- @RequestParam：默认情况下，required=true，也就是该参数必须要传。如果该参数可以传可不传，可以配置required=false；
 
 - @RequestBody：指方法参数应该被绑定到HTTP请求Body上；
 
 - @ResponseBody：与@RequestBody类似，它的作用是将返回类型直接输入到HTTP response body中；
 
-- @RestController：控制器实现了REST的API，只为服务于JSON，XML或其它自定义的类型内容，继承自@Controller注解，来标识当前类是一个控制器servlet，告诉Spring以字符串形式渲染结果，并直接返回给调用者；
+- @RestController：@Controller和@ResponseBody的组合，将方法的返回值直接填入HTTP Body响应体。表示当前Class是一个控制器bean，控制器实现了REST的API，只为服务于JSON，XML或其它自定义的类型内容
 
 - ```
   @Target({ElementType.TYPE})
