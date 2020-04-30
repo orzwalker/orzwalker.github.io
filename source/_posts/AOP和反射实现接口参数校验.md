@@ -150,7 +150,7 @@ public class ParamValidateAspect {
 ```java
 @PostMapping("/test")
     @MethodParamValidate
-    public RpcResponse<String> test(@NotNull @RequestParam Long doctorId, @NotNull @RequestParam Long diseaseId, @NotEmpty @RequestParam  List<Long> ids) {
+    public RpcResponse<String> test(@NotNull Long doctorId, @NotNull Long diseaseId, @NotEmpty @RequestParam  List<Long> ids) {
         System.out.println(1);
         return null;
     }
