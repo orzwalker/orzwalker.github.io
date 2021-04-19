@@ -29,3 +29,6 @@
 {"name":"hexo","hostname":"walkers-MacBook-Pro.local","pid":93314,"level":30,"msg":"Deploying: \u001b[35mgit\u001b[39m","time":"2021-04-19T09:30:05.757Z","v":0}
 {"name":"hexo","hostname":"walkers-MacBook-Pro.local","pid":93314,"level":30,"msg":"Clearing .deploy_git folder...","time":"2021-04-19T09:30:05.766Z","v":0}
 {"name":"hexo","hostname":"walkers-MacBook-Pro.local","pid":93314,"level":30,"msg":"Copying files from public folder...","time":"2021-04-19T09:30:05.828Z","v":0}
+{"name":"hexo","hostname":"walkers-MacBook-Pro.local","pid":93314,"level":30,"msg":"Copying files from extend dirs...","time":"2021-04-19T09:30:05.942Z","v":0}
+{"name":"hexo","hostname":"walkers-MacBook-Pro.local","pid":93314,"level":30,"msg":"Deploy done: \u001b[35mgit\u001b[39m","time":"2021-04-19T09:30:10.704Z","v":0}
+{"name":"hexo","hostname":"walkers-MacBook-Pro.local","pid":93314,"level":20,"msg":"Database saved","time":"2021-04-19T09:30:10.707Z","v":0}
