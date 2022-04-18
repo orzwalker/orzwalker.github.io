@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://orzwalker.github.io/sitemap.xml
