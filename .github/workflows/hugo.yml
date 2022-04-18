@@ -3,7 +3,7 @@ name: Hugo GitHub Actions
 on:
   push:
     branches:
-      - dev  # 指定了用于部署的源码所在的分支
+      - main  # 指定了用于部署的源码所在的分支
     paths-ignore:
       - 'README.md'
       - '.env'
@@ -40,5 +40,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main
+          publish_branch: dev
           full_commit_message: Deploy hugo
